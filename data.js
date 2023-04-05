@@ -1,4 +1,4 @@
-export const data = ({ name, email, phone, orders, price }) => {
+export const data = ({ name, email, phone, orders, info, price }) => {
   return `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,6 +15,7 @@ export const data = ({ name, email, phone, orders, price }) => {
         <li><strong>Name:</strong> ${name}</li>
         <li><strong>Email:</strong> ${email}</li>
         <li><strong>Phone:</strong> ${phone}</li>
+        <li><strong>Your orders info:</strong> ${info}</li>
         <li><strong>Total Price:</strong> $${price}</li>
       </ul>
       <p>We will begin processing your order immediately and will send you a confirmation email when it is ready for pickup. If you have any questions or concerns, please don't hesitate to contact us at 1-800-PIZZA.</p>

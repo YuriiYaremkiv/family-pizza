@@ -11,8 +11,8 @@ app.use(cors());
 
 app.post("/order", async (req, res) => {
   try {
-    const { name, email, phone, orders, price } = req.body;
-    const message = data({ name, email, phone, orders, price });
+    const { name, email, phone, orders, info, price } = req.body;
+    const message = data({ name, email, phone, orders, info, price });
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
     const msg = {
